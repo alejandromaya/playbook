@@ -1,4 +1,4 @@
-const Pokemon = require('./pokemon')
+import Pokemon from './pokemon.js'
 
 const pikachu = new Pokemon("pikachu")
 const bulbasaur = new Pokemon("bulbasaur")
