@@ -58,3 +58,12 @@ const explorers = [
       }
     }
    ]
+
+   console.log("Imprimimos el nombre cada explorer")
+   
+
+
+   console.log("Imprimimos el stack de cada explorer: ")
+   explorers.forEach((name) => {
+    console.log(name);
+   });
