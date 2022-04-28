@@ -89,4 +89,7 @@ const explorers = [
    }, 0);
    console.log("Total de ejercicios completados: " + reduce);
 
+   console.log("7.- Validación por el operador SOME");
+   const some = explorers.some(frontend => frontend.exercisesFinished)
+   console.log(some);
    
