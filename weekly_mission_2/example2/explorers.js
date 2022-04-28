@@ -74,4 +74,7 @@ const explorers = [
     return console.log(stack.name + ` ` + stack.stack);
    });
 
-  
+   console.log("4.- Filtramos el stack js de cada explorer")
+   const filter = explorers.filter(function(stack){
+       return console.log(stack.stack == 'js');
+   });
