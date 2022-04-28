@@ -59,11 +59,15 @@ const explorers = [
     }
    ]
 
-   console.log("Imprimimos el nombre cada explorer")
-   
+   console.log("1.- Imprimimos el nombre cada explorer")
+   explorers.forEach(name => {
+    console.log("Nombre: %s", name.name);
+   });
 
-
-   console.log("Imprimimos el stack de cada explorer: ")
+   console.log("2.- Imprimimos el stack de cada explorer: ")
    explorers.forEach((name) => {
     console.log(name);
    });
+
+   console.log("3.- Creamos una lista nueva usando MAP")
+   explorers.map
