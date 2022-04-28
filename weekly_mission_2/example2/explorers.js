@@ -59,22 +59,26 @@ const explorers = [
     }
    ]
 
-   console.log("1.- Imprimimos el nombre cada explorer")
+   console.log("1.- Imprimimos el nombre cada explorer");
    explorers.forEach(name => {
     console.log("Nombre: %s", name.name);
    });
 
-   console.log("2.- Imprimimos el stack de cada explorer: ")
+   console.log("2.- Imprimimos el stack de cada explorer: ");
    explorers.forEach((name) => {
     console.log(name);
    });
 
-   console.log("3.- Creamos una lista nueva usando MAP")
+   console.log("3.- Creamos una lista nueva usando MAP");
    const stacks = explorers.map(function(stack ){
     return console.log(stack.name + ` ` + stack.stack);
    });
 
-   console.log("4.- Filtramos el stack js de cada explorer")
+   console.log("4.- Filtramos el stack js de cada explorer");
    const filter = explorers.filter(function(stack){
        return console.log(stack.stack == 'js');
    });
+
+   console.log("5.- Buscamos el explorer que sea de la CDMX");
+   const find = explorers.find(city => city.city == "CDMX");
+   console.log(find);
