@@ -82,3 +82,11 @@ const explorers = [
    console.log("5.- Buscamos el explorer que sea de la CDMX");
    const find = explorers.find(city => city.city == "CDMX");
    console.log(find);
+
+   console.log("6.- Sumamos los valores de exercises_completed");
+   const reduce = explorers.reduce(function(previousValue, currentValue){
+       return previousValue + currentValue.exercises_completed;
+   }, 0);
+   console.log("Total de ejercicios completados: " + reduce);
+
+   
