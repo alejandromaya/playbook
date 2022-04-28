@@ -70,4 +70,8 @@ const explorers = [
    });
 
    console.log("3.- Creamos una lista nueva usando MAP")
-   explorers.map
+   const stacks = explorers.map(function(stack ){
+    return console.log(stack.name + ` ` + stack.stack);
+   });
+
+  
