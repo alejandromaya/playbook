@@ -90,6 +90,20 @@ const explorers = [
    console.log("Total de ejercicios completados: " + reduce);
 
    console.log("7.- Validación por el operador SOME");
-   const some = explorers.some(frontend => frontend.exercisesFinished)
-   console.log(some);
-   
+   const valsome = explorers.map(function(frontend){
+    return frontend.missions.frontend.exercisesFinished;
+   }) 
+   function search(element){
+       return element == true;
+   }
+   console.log(valsome.some(search));
+
+   console.log("8.- Validación para el onbording");
+   const val = explorers.map(function(onboarding){
+    return onboarding.missions.onboarding.isFinished;
+    })
+   function every(element){
+       return element == true;
+   }
+   const verifity = val.find(every);
+   console.log(verifity);
