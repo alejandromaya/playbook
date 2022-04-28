@@ -105,5 +105,5 @@ const explorers = [
    function every(element){
        return element == true;
    }
-   const verifity = val.find(every);
+   const verifity = val.every(every);
    console.log(verifity);
