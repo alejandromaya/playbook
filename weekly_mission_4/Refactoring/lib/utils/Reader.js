@@ -7,5 +7,4 @@ class Reader{
     }
 
 }
-
-module.exports = Reader
+module.exports = Reader;
